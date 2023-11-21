@@ -14,15 +14,15 @@ namespace edu.Pr.EjercicioAñadirClientes.Dtos
     {
         long idCuentaBancaria;
 
-        string isbanCuentaBancaria;
+        string isbanCuentaBancaria="es34235234634634";
 
         string codigoSwitchCuentaBancaria = "CSI1SSXX";
 
-        string FechaAltaCuentaBancaria;
+        string FechaAltaCuentaBancaria="1-1-2023";
 
         string FechaBajaCuentaBancaria = "1-1-2030";
 
-        String dniCuentaBancaria;
+        String dniCuentaBancaria="1234231423J";
 
 
         public long IdCuentaBancaria { get => idCuentaBancaria; set => idCuentaBancaria = value; }
