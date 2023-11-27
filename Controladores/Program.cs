@@ -61,5 +61,5 @@ namespace edu.Pr.EjercicioAñadirClientes.Controladores
 }
 //Asignar valor a cliente, buscar usuario con ese DNI y modificar nombre a los usuarios con ese DNI.
 /*  foreach (clienteDtos cliente in listaClientes){      <--solo se dedica a mirar la lista
- *  if(cliente.DNI == "382478426J"){                     <--se dedica a buscar atributos (== no es el metodo para buscar--> evalue)
- *  cliente.Nombre = "Marta";  */
+ *  if(cliente.DNI == "382478426J"){                     <--se dedica a buscar atributos (== no es el metodo para buscar 
+ *  cliente.Nombre = "Marta";                               referencias de memoria--> evalue) */

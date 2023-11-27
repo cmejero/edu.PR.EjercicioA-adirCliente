@@ -14,12 +14,6 @@ namespace edu.Pr.EjercicioAñadirClientes.Servicios
     internal class CuentaBancImplementacion : CuentaBancInterfaz
     {
 
-        /// <summary>
-        /// método que muestra al usuario la lista que queremos que complete para 
-        /// crear y dar de alta una nueva cuenta.
-        /// <author>CMR-211123</author>
-        /// </summary>
-        /// <param name="ListaAntiguaCB"></param>
         public void DarAltaCuentaBancaria (List<CuentaBancariaDtos> ListaAntiguaCB)
         {
             CuentaBancariaDtos CuentaBancaria = crearNuevaCuenta();
@@ -30,10 +24,10 @@ namespace edu.Pr.EjercicioAñadirClientes.Servicios
 
         }
         /// <summary>
-        /// Método donde creamos una nueva cuenta bancaria.
+        /// Dar de alta una nueva cuenta bancaria asociada a un cliente
         /// <author>CMR-211123</author>
         /// </summary>
-        /// <returns></returns>
+        /// <returns>Nueva cuenta bancaria con la informacion solicitada</returns>
         private CuentaBancariaDtos crearNuevaCuenta()
         {
 
