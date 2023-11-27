@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace edu.Pr.EjercicioAñadirClientes.Dtos
 {
     /// <summary>
-    /// Clase donde se encuentra la lista con la información que queremos obtener.
+    /// Entidad reprensa el ente cuenta bancaria del banco
     /// <author>CMR-211123</author>
     /// </summary>
     internal class CuentaBancariaDtos
@@ -22,7 +22,7 @@ namespace edu.Pr.EjercicioAñadirClientes.Dtos
 
         string FechaBajaCuentaBancaria = "1-1-2030";
 
-        String dniCuentaBancaria="1234231423J";
+        String dniCliente="1234231423J";
 
 
         public long IdCuentaBancaria { get => idCuentaBancaria; set => idCuentaBancaria = value; }
@@ -30,7 +30,7 @@ namespace edu.Pr.EjercicioAñadirClientes.Dtos
         public string CodigoSwitchCuentaBancaria { get => codigoSwitchCuentaBancaria; set => codigoSwitchCuentaBancaria = value; }
         public string FechaAltaCuentaBancaria1 { get => FechaAltaCuentaBancaria; set => FechaAltaCuentaBancaria = value; }
         public string FechaBajaCuentaBancaria1 { get => FechaBajaCuentaBancaria; set => FechaBajaCuentaBancaria = value; }
-        public string DniCuentaBancaria { get => dniCuentaBancaria; set => dniCuentaBancaria = value; }
+        public string DniCliente { get => dniCliente; set => dniCliente = value; }
 
         /// <summary>
         /// 
@@ -41,15 +41,15 @@ namespace edu.Pr.EjercicioAñadirClientes.Dtos
         /// <param name="codigoSwitchCuentaBancaria"></param>
         /// <param name="fechaAltaCuentaBancaria"></param>
         /// <param name="fechaBajaCuentaBancaria"></param>
-        /// <param name="dniCuentaBancaria"></param>
-        public CuentaBancariaDtos(long idCuentaBancaria, string isbanCuentaBancaria, string codigoSwitchCuentaBancaria, string fechaAltaCuentaBancaria, string fechaBajaCuentaBancaria, string dniCuentaBancaria)
+        /// <param name="dniCliente"></param>
+        public CuentaBancariaDtos(long idCuentaBancaria, string isbanCuentaBancaria, string codigoSwitchCuentaBancaria, string fechaAltaCuentaBancaria, string fechaBajaCuentaBancaria, string dniCliente)
         {
             this.idCuentaBancaria = idCuentaBancaria;
             this.isbanCuentaBancaria = isbanCuentaBancaria;
             this.codigoSwitchCuentaBancaria = codigoSwitchCuentaBancaria;
             this.FechaAltaCuentaBancaria = fechaAltaCuentaBancaria;
             this.FechaBajaCuentaBancaria = fechaBajaCuentaBancaria;
-            this.dniCuentaBancaria = dniCuentaBancaria;
+            this.dniCliente = dniCliente;
         
         }
         /// <summary>
@@ -71,7 +71,7 @@ namespace edu.Pr.EjercicioAñadirClientes.Dtos
                 "ISBAN: " + this.isbanCuentaBancaria +
                 "Codigo switch: " + this.codigoSwitchCuentaBancaria +
                 "Fecha de alta: " + this.FechaAltaCuentaBancaria +
-                "DNI: " + this.dniCuentaBancaria;
+                "DNI: " + this.dniCliente;
                 
             return cuentaBancariaString;
 

@@ -49,7 +49,7 @@ namespace edu.Pr.EjercicioAñadirClientes.Servicios
             NuevaCuentaBancaria.FechaAltaCuentaBancaria1 = Console.ReadLine(); ;
 
             Console.WriteLine("Introduza DNI: ");
-            NuevaCuentaBancaria.DniCuentaBancaria = Console.ReadLine();
+            NuevaCuentaBancaria.DniCliente = Console.ReadLine();
 
             
             return NuevaCuentaBancaria;
