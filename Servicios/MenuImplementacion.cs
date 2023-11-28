@@ -25,8 +25,11 @@ namespace edu.Pr.EjercicioAñadirClientes.Servicios
 
             Console.WriteLine("#####################");
             Console.WriteLine("0. Cerrar aplicación");
-            Console.WriteLine("1. Añadir cliente");
-            Console.WriteLine("2. Añadir cuenta bancaria");
+            Console.WriteLine("1. Alta cliente");
+            Console.WriteLine("2. Alta cuenta bancaria");
+            Console.WriteLine("3. Modificar cliente");
+            Console.WriteLine("3. Eliminar cliente");
+            Console.WriteLine("3. Ver cliente");
             Console.WriteLine("#####################");
             Console.WriteLine("Seleccione una opción");
 
@@ -34,6 +37,13 @@ namespace edu.Pr.EjercicioAñadirClientes.Servicios
 
             return opcionIntroducida;
 
+        }
+
+        public string pedirDNI()
+        {
+            Console.WriteLine("Indica el DNI del cliente: ");
+            string dniCliente = Console.ReadLine();
+            return dniCliente;
         }
     }
 }

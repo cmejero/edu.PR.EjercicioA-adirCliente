@@ -21,5 +21,12 @@ namespace edu.Pr.EjercicioAñadirClientes.Servicios
         /// </summary>
         /// <param name="listaAntigua"></param>
         public void darAltaCliente(List<ClienteDtos> listaAntigua);
+
+        /// <summary>
+        /// 
+        /// <author>CMR-281123</author>
+        /// </summary>
+        /// <param name="listaAntigua"></param>
+        public void eliminarCliente(List<ClienteDtos> listaAntigua);
     }
 }

@@ -21,6 +21,6 @@ namespace edu.Pr.EjercicioAñadirClientes.Servicios
         /// <returns></returns>
         public int mostrarMenuYSeleccion();
 
-
+        public string pedirDNI();
     }
 }

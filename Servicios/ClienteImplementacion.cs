@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Serialization;
 
 namespace edu.Pr.EjercicioAñadirClientes.Servicios
 {
@@ -27,6 +28,33 @@ namespace edu.Pr.EjercicioAñadirClientes.Servicios
             listaAntigua.Add(cliente);
 
         }
+
+        public void eliminarCliente(List<ClienteDtos> listaAntigua)
+        {
+            MenuInterfaz mi = new MenuImplementacion();
+            string dniBuscar = mi.pedirDNI();
+
+            //posición
+            int i;
+            bool aBorrar = false;
+            for ( i = 0; i < listaAntigua.Count(); i++)
+            {
+                if (listaAntigua[i].DniCliente.Equals(dniBuscar)) {
+                    aBorrar = true;
+                    break;
+                }
+            }
+            if(aBorrar)
+            {
+                listaAntigua.RemoveAt(i);
+            }
+            else
+            {
+                Console.WriteLine("El cliente no existe");
+            }
+
+        }
+
         /// <summary>
         /// Método donde creamos un nuevo usuario.
         /// <author>CMR-211123</author>
